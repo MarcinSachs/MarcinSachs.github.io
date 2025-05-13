@@ -1,1 +1,181 @@
-TEST
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title will be set by JavaScript -->
+    <title>Marcin Sachs</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+Unchanged lines
+    <!-- Nawigacja -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" data-i18n="navBrand">Marcin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    data-i18n-aria-label="ariaLabels.toggleNavigation"
+                    aria-label="Przełącz nawigację"> <!-- Fallback aria-label -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item icon-nav-item">
+                        <a class="nav-link icon-link" href="#home">
+                            <span class="icon-label" data-i18n="nav.home">Start</span>
+                            <img src="assets/images/logos/home.svg" class="nav-icon" data-i18n-alt="nav.homeAlt" alt="Start">
+                        </a>
+                    </li>
+                    <li class="nav-item icon-nav-item">
+                        <a class="nav-link icon-link" href="#python">
+                            <span class="icon-label" data-i18n="nav.python">Python</span>
+                            <img src="assets/images/logos/python.svg" class="nav-icon" data-i18n-alt="nav.pythonAlt" alt="Python">
+                        </a>
+                    </li>
+                    <li class="nav-item icon-nav-item">
+                        <a class="nav-link icon-link" href="#csharp">
+                            <span class="icon-label" data-i18n="nav.csharp">C#</span>
+                            <img src="assets/images/logos/csharp.svg" class="nav-icon" data-i18n-alt="nav.csharpAlt" alt="C#">
+                        </a>
+                    </li>
+                    <li class="nav-item icon-nav-item">
+                        <a class="nav-link icon-link" href="#autocad">
+                            <span class="icon-label" data-i18n="nav.autocad">AutoCAD</span>
+                            <img src="assets/images/logos/autocad.svg" class="nav-icon" data-i18n-alt="nav.autocadAlt" alt="AutoCAD">
+                        </a>
+                    </li>
+                    <li class="nav-item icon-nav-item">
+                        <a class="nav-link icon-link" href="#fotografia">
+                            <span class="icon-label" data-i18n="nav.photography">Fotografia</span>
+                            <img src="assets/images/logos/camera.svg" class="nav-icon" data-i18n-alt="nav.photographyAlt" alt="Fotografia">
+                        </a>
+                    </li>
+                    <li class="nav-item icon-nav-item">
+                        <a class="nav-link icon-link" href="#kontakt">
+                            <span class="icon-label" data-i18n="nav.contact">Kontakt</span>
+                            <img src="assets/images/logos/mail.svg" class="nav-icon" data-i18n-alt="nav.contactAlt" alt="Kontakt">
+                        </a>
+                    </li>
+                    <!-- Language Switcher -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="langSwitcher.current">PL</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" data-lang="pl" data-i18n="langSwitcher.pl">Polski</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="en" data-i18n="langSwitcher.en">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sekcja Startowa (Hero) -->
+    <header id="home" class="py-5 text-center">
+        <div class="container">
+            <!-- Pamiętaj, aby dodać swoje zdjęcie do assets/images/profile.jpg -->
+            <img src="assets/images/profile.jpg"
+                 data-i18n-alt="hero.profileAlt"
+                 alt="Zdjęcie profilowe" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+            <h1 class="display-4" data-i18n="hero.title">Witaj na moim portfolio!</h1>
+            <p class="lead" data-i18n="hero.subtitle">Nazywam się Marcin Sachs i pasjonuję się programowaniem, fotografią oraz projektowaniem w AutoCAD.</p>
+        </div>
+    </header>
+
+    <!-- Sekcja Python -->
+    <section id="python" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" data-i18n="pythonSection.title">Projekty Python</h2>
+            <p class="text-center" data-i18n="pythonSection.intro">Tutaj zaprezentuję moje projekty zrealizowane w języku Python. Python jest moją główną specjalizacją.</p>
+            <div class="row">
+                <!-- Przykład projektu Python -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Projekt+Python+1" class="card-img-top"
+                             data-i18n-alt="pythonSection.project1.alt"
+                             alt="Projekt Python 1">
+                        <div class="card-body">
+                            <h5 class="card-title" data-i18n="pythonSection.project1.title">Nazwa Projektu Python 1</h5>
+                            <p class="card-text" data-i18n="pythonSection.project1.description">Krótki opis projektu. Co robi, jakie technologie zostały użyte.</p>
+                            <a href="#" class="btn btn-primary" data-i18n="pythonSection.project1.button">Zobacz więcej</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dodaj więcej kart projektów Python tutaj -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja C# -->
+    <section id="csharp" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-i18n="csharpSection.title">Projekty C#</h2>
+            <p class="text-center" data-i18n="csharpSection.intro">Moje doświadczenie i projekty w C#.</p>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Projekt+C%23+1" class="card-img-top"
+                             data-i18n-alt="csharpSection.project1.alt"
+                             alt="Projekt C# 1">
+                        <div class="card-body">
+                            <h5 class="card-title" data-i18n="csharpSection.project1.title">Nazwa Projektu C# 1</h5>
+                            <p class="card-text" data-i18n="csharpSection.project1.description">Krótki opis projektu.</p>
+                            <a href="#" class="btn btn-primary" data-i18n="csharpSection.project1.button">Zobacz więcej</a>
+                        </div>
+                    </div>
+                </div>
+Unchanged lines
+    <!-- Sekcja AutoCAD -->
+    <section id="autocad" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" data-i18n="autocadSection.title">Projekty AutoCAD</h2>
+            <p class="text-center" data-i18n="autocadSection.intro">Przykłady moich prac wykonanych w AutoCAD. Pamiętaj, aby dodać swoje prace do `assets/images/autocad/`</p>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="assets/images/autocad/projekt_autocad1.png" class="card-img-top"
+                             data-i18n-alt="autocadSection.project1.alt"
+                             alt="Projekt AutoCAD 1">
+                        <div class="card-body">
+                            <h5 class="card-title" data-i18n="autocadSection.project1.title">Projekt AutoCAD 1</h5>
+                            <p class="card-text" data-i18n="autocadSection.project1.description">Opis projektu wykonanego w AutoCAD.</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Dodaj więcej kart projektów AutoCAD tutaj -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Fotografia -->
+    <section id="fotografia" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-i18n="photographySection.title">Moja Fotografia</h2>
+            <p class="text-center" data-i18n="photographySection.intro">Galeria wybranych zdjęć mojego autorstwa. Pamiętaj, aby dodać swoje zdjęcia do `assets/images/photography/`</p>
+            <div class="row">
+                <div class="col-md-4 mb-4"><img src="assets/images/photography/zdjecie1.jpg" class="img-fluid rounded" data-i18n-alt="photographySection.photo1Alt" alt="Zdjęcie 1"></div>
+                <div class="col-md-4 mb-4"><img src="assets/images/photography/zdjecie2.jpg" class="img-fluid rounded" data-i18n-alt="photographySection.photo2Alt" alt="Zdjęcie 2"></div>
+                <!-- Dodaj więcej zdjęć tutaj -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Kontakt -->
+    <section id="kontakt" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" data-i18n="contactSection.title">Kontakt</h2>
+            <p class="text-center" data-i18n="contactSection.intro">Skontaktuj się ze mną poprzez email lub media społecznościowe.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <ul class="list-unstyled text-center">
+                        <li><span data-i18n="contactSection.email">Email: </span><a href="mailto:marcin.sachs@example.com">marcin.sachs@example.com</a></li>
+                        <li><span data-i18n="contactSection.linkedin">LinkedIn: </span><a href="https://linkedin.com/in/marcinsachs" target="_blank">Profil LinkedIn Marcina</a></li>
+                        <li><span data-i18n="contactSection.github">GitHub: </span><a href="https://github.com/MarcinSachs" target="_blank">Profil GitHub Marcina</a></li>
+                    </ul>
+                </div>
+            </div>
+Unchanged lines
+    <!-- Stopka -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> <span data-i18n="footer.copyright">Marcin Sachs. Wszelkie prawa zastrzeżone.</span></p>
+        </div>
+    </footer>

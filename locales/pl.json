@@ -1,0 +1,76 @@
+{
+  "pageTitle": "Moje Portfolio - Marcin Sachs",
+  "navBrand": "Marcin",
+  "nav": {
+    "home": "Start",
+    "homeAlt": "Ikona Start",
+    "python": "Python",
+    "pythonAlt": "Ikona Python",
+    "csharp": "C#",
+    "csharpAlt": "Ikona C#",
+    "autocad": "AutoCAD",
+    "autocadAlt": "Ikona AutoCAD",
+    "photography": "Fotografia",
+    "photographyAlt": "Ikona Fotografia",
+    "contact": "Kontakt",
+    "contactAlt": "Ikona Kontakt"
+  },
+  "langSwitcher": {
+    "current": "PL",
+    "pl": "Polski",
+    "en": "English"
+  },
+  "hero": {
+    "profileAlt": "Zdjęcie profilowe Marcina Sachsa",
+    "title": "Witaj na moim portfolio!",
+    "subtitle": "Nazywam się Marcin Sachs i pasjonuję się programowaniem, fotografią oraz projektowaniem w AutoCAD."
+  },
+  "pythonSection": {
+    "title": "Projekty Python",
+    "intro": "Tutaj zaprezentuję moje projekty zrealizowane w języku Python. Python jest moją główną specjalizacją.",
+    "project1": {
+      "alt": "Projekt Python 1",
+      "title": "Nazwa Projektu Python 1",
+      "description": "Krótki opis projektu. Co robi, jakie technologie zostały użyte.",
+      "button": "Zobacz więcej"
+    }
+  },
+  "csharpSection": {
+    "title": "Projekty C#",
+    "intro": "Moje doświadczenie i projekty w C#.",
+    "project1": {
+        "alt": "Projekt C# 1",
+        "title": "Nazwa Projektu C# 1",
+        "description": "Krótki opis projektu.",
+        "button": "Zobacz więcej"
+    }
+  },
+  "autocadSection": {
+    "title": "Projekty AutoCAD",
+    "intro": "Przykłady moich prac wykonanych w AutoCAD. Pamiętaj, aby dodać swoje prace do `assets/images/autocad/`",
+    "project1": {
+        "alt": "Projekt AutoCAD 1",
+        "title": "Projekt AutoCAD 1",
+        "description": "Opis projektu wykonanego w AutoCAD."
+    }
+  },
+  "photographySection": {
+    "title": "Moja Fotografia",
+    "intro": "Galeria wybranych zdjęć mojego autorstwa. Pamiętaj, aby dodać swoje zdjęcia do `assets/images/photography/`",
+    "photo1Alt": "Zdjęcie 1",
+    "photo2Alt": "Zdjęcie 2"
+  },
+  "contactSection": {
+    "title": "Kontakt",
+    "intro": "Skontaktuj się ze mną poprzez email lub media społecznościowe.",
+    "email": "Email: ",
+    "linkedin": "LinkedIn: ",
+    "github": "GitHub: "
+  },
+  "footer": {
+    "copyright": "Marcin Sachs. Wszelkie prawa zastrzeżone."
+  },
+  "ariaLabels": {
+      "toggleNavigation": "Przełącz nawigację"
+  }
+}

@@ -1,0 +1,69 @@
+/* Custom Styles for Your Portfolio */
+body {
+    padding-top: 56px; /* Wysokość nawigacji Bootstrapa, dostosuj w razie potrzeby */
+}
+
+header#home {
+    background-color: #f8f9fa; /* Jasnoszary, dobry dla sekcji "hero" */
+}
+
+.card-img-top {
+    height: 200px; /* Możesz dostosować wysokość obrazków w kartach */
+    object-fit: cover; /* Zapewnia, że obrazki ładnie wypełniają przestrzeń */
+}
+
+#fotografia img {
+    border: 3px solid #dee2e6; /* Przykładowa ramka dla zdjęć */
+    transition: transform 0.3s ease-in-out;
+}
+
+#fotografia img:hover {
+    transform: scale(1.05); /* Lekki efekt zoomu po najechaniu myszką */
+}
+
+/* Icon Navigation Styles */
+.icon-nav-item {
+    margin-left: 5px; /* Reduced margin for more icons */
+    margin-right: 5px;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem; /* Adjust padding */
+    text-decoration: none;
+    position: relative; /* For label positioning */
+    color: #f8f9fa; /* Light color for label text */
+    min-height: 40px; /* Ensure consistent height */
+}
+
+.icon-label {
+    opacity: 0;
+    transform: translateX(-20px); /* Start shifted left and hidden */
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    white-space: nowrap;
+    margin-right: 8px; /* Space between label and icon when visible */
+    font-size: 0.9rem; /* Slightly smaller font for nav labels */
+}
+
+.nav-icon {
+    width: 24px; /* Icon size */
+    height: 24px;
+    filter: grayscale(100%);
+    transition: filter 0.2s ease-out, transform 0.2s ease-out;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.icon-link:hover .icon-label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.icon-link:hover .nav-icon,
+.nav-icon.item-clicked { /* Zmieniono z .active na .item-clicked dla kolorowania po kliknięciu */
+    filter: grayscale(0%);
+}
+
+.icon-link:hover .nav-icon {
+    transform: translateX(10px); /* Move icon to the right on hover */
+}

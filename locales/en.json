@@ -1,0 +1,76 @@
+{
+  "pageTitle": "My Portfolio - Marcin Sachs",
+  "navBrand": "Marcin",
+  "nav": {
+    "home": "Home",
+    "homeAlt": "Home Icon",
+    "python": "Python",
+    "pythonAlt": "Python Icon",
+    "csharp": "C#",
+    "csharpAlt": "C# Icon",
+    "autocad": "AutoCAD",
+    "autocadAlt": "AutoCAD Icon",
+    "photography": "Photography",
+    "photographyAlt": "Photography Icon",
+    "contact": "Contact",
+    "contactAlt": "Contact Icon"
+  },
+  "langSwitcher": {
+    "current": "EN",
+    "pl": "Polski",
+    "en": "English"
+  },
+  "hero": {
+    "profileAlt": "Profile picture of Marcin Sachs",
+    "title": "Welcome to my portfolio!",
+    "subtitle": "My name is Marcin Sachs and I am passionate about programming, photography, and AutoCAD design."
+  },
+  "pythonSection": {
+    "title": "Python Projects",
+    "intro": "Here I will present my projects developed in Python. Python is my main specialization.",
+    "project1": {
+      "alt": "Python Project 1",
+      "title": "Python Project Name 1",
+      "description": "Short project description. What it does, technologies used.",
+      "button": "See more"
+    }
+  },
+  "csharpSection": {
+    "title": "C# Projects",
+    "intro": "My experience and projects in C#.",
+    "project1": {
+        "alt": "C# Project 1",
+        "title": "C# Project Name 1",
+        "description": "Short project description.",
+        "button": "See more"
+    }
+  },
+  "autocadSection": {
+    "title": "AutoCAD Projects",
+    "intro": "Examples of my work done in AutoCAD. Remember to add your work to `assets/images/autocad/`",
+    "project1": {
+        "alt": "AutoCAD Project 1",
+        "title": "AutoCAD Project 1",
+        "description": "Description of the project made in AutoCAD."
+    }
+  },
+  "photographySection": {
+    "title": "My Photography",
+    "intro": "A gallery of selected photos I've taken. Remember to add your photos to `assets/images/photography/`",
+    "photo1Alt": "Photo 1",
+    "photo2Alt": "Photo 2"
+  },
+  "contactSection": {
+    "title": "Contact",
+    "intro": "Contact me via email or social media.",
+    "email": "Email: ",
+    "linkedin": "LinkedIn: ",
+    "github": "GitHub: "
+  },
+  "footer": {
+    "copyright": "Marcin Sachs. All rights reserved."
+  },
+  "ariaLabels": {
+      "toggleNavigation": "Toggle navigation"
+  }
+}
