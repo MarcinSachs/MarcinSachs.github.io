@@ -12,12 +12,12 @@ header#home {
     object-fit: cover; /* Zapewnia, że obrazki ładnie wypełniają przestrzeń */
 }
 
-#fotografia img {
+#fotography img {
     border: 3px solid #dee2e6; /* Przykładowa ramka dla zdjęć */
     transition: transform 0.3s ease-in-out;
 }
 
-#fotografia img:hover {
+#fotography img:hover {
     transform: scale(1.05); /* Lekki efekt zoomu po najechaniu myszką */
 }
 
@@ -33,16 +33,22 @@ header#home {
     padding: 0.5rem 0.5rem; /* Adjust padding */
     text-decoration: none;
     position: relative; /* For label positioning */
-    color: #f8f9fa; /* Light color for label text */
+    color: #f8f9fa;    /* Light color for label text */
+    flex-direction: row-reverse; /* Icon first, then label */
     min-height: 40px; /* Ensure consistent height */
+
+    /* Initial width to fit icon (24px) + padding (0.5rem * 2 = 1rem) */
+    width: calc(24px + 1rem); /* (24px + 16px = 40px) */
+    transition: width 0.2s ease-out; /* Animate width change */
 }
 
 .icon-label {
     opacity: 0;
-    transform: translateX(-20px); /* Start shifted left and hidden */
+    transform: scaleX(0); /* Start scaled to zero width */
+    transform-origin: left center; /* Scale from left (side of icon) */
     transition: opacity 0.2s ease-out, transform 0.2s ease-out;
     white-space: nowrap;
-    margin-right: 8px; /* Space between label and icon when visible */
+    margin-left: 8px; /* Space between icon and label when visible */
     font-size: 0.9rem; /* Slightly smaller font for nav labels */
 }
 
@@ -55,8 +61,9 @@ header#home {
 }
 
 .icon-link:hover .icon-label {
+    /* Label becomes visible and expands */
     opacity: 1;
-    transform: translateX(0);
+    transform: scaleX(1); /* Expand to full width */
 }
 
 .icon-link:hover .nav-icon,
@@ -65,5 +72,11 @@ header#home {
 }
 
 .icon-link:hover .nav-icon {
-    transform: translateX(10px); /* Move icon to the right on hover */
+    /* Icon moves slightly to the left, aligning with padding edge */
+    transform: translateX(-8px); /* Adjust to prevent overlap (equal to left padding) */
+}
+
+.icon-link:hover {
+    /* Expand the link container to fit the label and moved icon */
+    width: 150px; /* Dostosuj tę wartość do najdłuższej etykiety. Przykładowo 8px(padding) + 90px(label) + 8px(margin) + 24px(icon) + 10px(przesunięcie ikony) + 8px(padding) ~= 150px */
 }
