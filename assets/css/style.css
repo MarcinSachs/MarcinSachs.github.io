@@ -1,109 +1,79 @@
 /* Custom Styles for Your Portfolio */
 body {
-    padding-top: 56px;
-    /* Wysokość nawigacji Bootstrapa, dostosuj w razie potrzeby */
+    padding-top: 56px; /* Wysokość nawigacji Bootstrapa, dostosuj w razie potrzeby */
 }
 
 header#home {
-    background-color: #f8f9fa;
-    /* Jasnoszary, dobry dla sekcji "hero" */
+    background-color: #f8f9fa; /* Jasnoszary, dobry dla sekcji "hero" */
 }
 
 .card-img-top {
-    height: 200px;
-    /* Możesz dostosować wysokość obrazków w kartach */
-    object-fit: cover;
-    /* Zapewnia, że obrazki ładnie wypełniają przestrzeń */
+    height: 200px; /* Możesz dostosować wysokość obrazków w kartach */
+    object-fit: cover; /* Zapewnia, że obrazki ładnie wypełniają przestrzeń */
 }
 
 #fotography img {
-    border: 3px solid #dee2e6;
-    /* Przykładowa ramka dla zdjęć */
+    border: 3px solid #dee2e6; /* Przykładowa ramka dla zdjęć */
     transition: transform 0.3s ease-in-out;
 }
 
 #fotography img:hover {
-    transform: scale(1.05);
-    /* Lekki efekt zoomu po najechaniu myszką */
+    transform: scale(1.05); /* Lekki efekt zoomu po najechaniu myszką */
 }
-
 /* Icon Navigation Styles */
 .icon-nav-item {
-    margin-left: 5px;
-    /* Reduced margin for more icons */
+    margin-left: 5px; /* Reduced margin for more icons */
     margin-right: 5px;
-    width: 30px;
 }
 
 .icon-link {
-    display: inline-block;
-    align-items: right;
-    padding: 0.5rem 0.5rem;
-    /* Adjust padding */
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem; /* Adjust padding */
     text-decoration: none;
-    position: relative;
-    /* For label positioning */
-    color: #f8f9fa;
-    /* Light color for label text */
-    flex-direction: row-reverse;
-    /* Icon first, then label */
-    min-height: 40px;
-    /* Ensure consistent height */
-
-    /* Initial width to fit icon (24px) + padding (0.5rem * 2 = 1rem) */
-    width: calc(24px + 1rem);
-    /* (24px + 16px = 40px) */
-    transition: width 0.2s ease-out;
-    /* Animate width change */
+    position: relative; /* For label positioning */
+    min-height: 40px; /* Ensure consistent height */
 }
 
 .icon-label {
     opacity: 0;
-    transform: scaleX(0);
-    /* Start scaled to zero width */
-    transform-origin: left center;
-    /* Scale from left (side of icon) */
+    transform: translateX(-20px); /* Start shifted left and hidden */
     transition: opacity 0.2s ease-out, transform 0.2s ease-out;
     white-space: nowrap;
-    margin-left: 8px;
-    /* Space between icon and label when visible */
-    font-size: 0.9rem;
-    /* Slightly smaller font for nav labels */
+    margin-right: 8px; /* Space between label and icon when visible */
+    font-size: 0.9rem; /* Slightly smaller font for nav labels */
 }
 
 .nav-icon {
-    width: 24px;
-    /* Icon size */
+    width: 24px; /* Icon size */
     height: 24px;
     filter: grayscale(100%);
     transition: filter 0.2s ease-out, transform 0.2s ease-out;
-    flex-shrink: 0;
-    /* Prevent icon from shrinking */
+    flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
 .icon-link:hover .icon-label {
-    /* Label becomes visible and expands */
     opacity: 1;
-    /*transform: scaleX(1);
-    transform: translateX(-8px);*/
-
+    transform: translateX(0);
 }
 
 .icon-link:hover .nav-icon,
-.nav-icon.item-clicked {
-    /* Zmieniono z .active na .item-clicked dla kolorowania po kliknięciu */
+.nav-icon.item-clicked, /* Kolor po kliknięciu (najwyższy priorytet) */
+.nav-icon.scroll-active-icon { /* Kolor po przewinięciu do sekcji (niższy priorytet) */
     filter: grayscale(0%);
 }
-
 .icon-link:hover .nav-icon {
-    /* Icon moves slightly to the left, aligning with padding edge */
-    /*transform: translateX(-8px);
-    /* Adjust to prevent overlap (equal to left padding) */
-
+    transform: translateX(10px); /* Move icon to the right on hover */
 }
 
-.icon-link:hover {
-    /* Expand the link container to fit the label and moved icon */
+/* Styl dla etykiety tekstowej menu (hover i aktywny) */
+.icon-link:hover .icon-label,
+.icon-link.link-active .icon-label, /* Kolor etykiety po kliknięciu (najwyższy priorytet) */
+.icon-link.scroll-active-link .icon-label { /* Kolor etykiety po przewinięciu (niższy priorytet) */
+    color: #f8f9fa; /* Ustawienie koloru etykiety na hover i dla aktywnego (klikniętego) linku */
+}
 
-    /* Dostosuj tę wartość do najdłuższej etykiety. Przykładowo 8px(padding) + 90px(label) + 8px(margin) + 24px(icon) + 10px(przesunięcie ikony) + 8px(padding) ~= 150px */
+/* Zapewnienie, że kliknięty stan ma wyższy priorytet */
+.icon-link.link-active .nav-icon {
+    filter: grayscale(0%); /* Upewnij się, że ikona jest kolorowa, jeśli link jest kliknięty */
 }
