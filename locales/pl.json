@@ -3,7 +3,7 @@
   "navBrand": "Marcin",
   "nav": {
     "home": "Start",
-    "homeAlt": "Ikona Start",
+    "homeAlt": "Ikona strony głównej",
     "python": "Python",
     "pythonAlt": "Ikona Python",
     "csharp": "C#",
@@ -11,14 +11,20 @@
     "autocad": "AutoCAD",
     "autocadAlt": "Ikona AutoCAD",
     "photography": "Fotografia",
-    "photographyAlt": "Ikona Fotografia",
+    "photographyAlt": "Ikona fotografii",
     "contact": "Kontakt",
-    "contactAlt": "Ikona Kontakt"
+    "contactAlt": "Ikona kontaktu"
   },
   "langSwitcher": {
     "current": "PL",
     "pl": "Polski",
-    "en": "English"
+    "en": "English",
+    "plAlt": "Flaga Polski",
+    "enAlt": "Flaga Angielska",
+    "currentSelectedLangAlt": "Wybrany język: Polski"
+  },
+  "ariaLabels": {
+    "toggleNavigation": "Przełącz nawigację"
   },
   "hero": {
     "profileAlt": "Zdjęcie profilowe Marcina Sachsa",
@@ -69,8 +75,5 @@
   },
   "footer": {
     "copyright": "Marcin Sachs. Wszelkie prawa zastrzeżone."
-  },
-  "ariaLabels": {
-      "toggleNavigation": "Przełącz nawigację"
   }
 }

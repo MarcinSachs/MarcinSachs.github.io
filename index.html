@@ -48,11 +48,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <li class="nav-item">
-                            <a class="nav-link icon-link" href="#fotography">
-                                <img src="assets/images/logos/fotography.svg" class="nav-icon" data-i18n-alt="nav.fotographyAlt" alt="Fotografia">
-                                <span class="icon-label" data-i18n="nav.fotography">Fotografia</span>
-                            </a>
+                        <a class="nav-link icon-link" href="#photography">
+                            <img src="assets/images/logos/photography.svg" class="nav-icon" data-i18n-alt="nav.photographyAlt" alt="Fotografia">
+                            <span class="icon-label" data-i18n="nav.photography">Fotografia</span>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link icon-link" href="#contact">
@@ -62,10 +61,17 @@
                     </li>
                     <!-- Language Switcher -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="langSwitcher.current">PL</a>
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img id="currentLangFlag" src="assets/images/flags/pl.svg" alt="Current language flag" class="lang-flag me-2">
+                            <span id="currentLangCode">PL</span>
+                        </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                            <li><a class="dropdown-item" href="#" data-lang="pl" data-i18n="langSwitcher.pl">Polski</a></li>
-                            <li><a class="dropdown-item" href="#" data-lang="en" data-i18n="langSwitcher.en">English</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#" data-lang="pl">
+                                    <img src="assets/images/flags/pl.svg" data-i18n-alt="langSwitcher.plAlt" alt="Flaga Polski" class="lang-flag me-2">
+                                    <span data-i18n="langSwitcher.pl">Polski</span></a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#" data-lang="en">
+                                    <img src="assets/images/flags/en.svg" data-i18n-alt="langSwitcher.enAlt" alt="Flaga Angielska" class="lang-flag me-2">
+                                    <span data-i18n="langSwitcher.en">English</span></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -151,7 +157,7 @@
     </section>
 
     <!-- Sekcja Fotografia -->
-    <section id="fotography" class="py-5">
+    <section id="photography" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4" data-i18n="photographySection.title">Moja Fotografia</h2>
             <p class="text-center" data-i18n="photographySection.intro">Galeria wybranych zdjęć mojego autorstwa. Pamiętaj, aby dodać swoje zdjęcia do `assets/images/photography/`</p>

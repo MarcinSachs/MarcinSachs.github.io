@@ -3,25 +3,31 @@
   "navBrand": "Marcin",
   "nav": {
     "home": "Home",
-    "homeAlt": "Home Icon",
+    "homeAlt": "Home icon",
     "python": "Python",
-    "pythonAlt": "Python Icon",
+    "pythonAlt": "Python icon",
     "csharp": "C#",
-    "csharpAlt": "C# Icon",
+    "csharpAlt": "C# icon",
     "autocad": "AutoCAD",
-    "autocadAlt": "AutoCAD Icon",
+    "autocadAlt": "AutoCAD icon",
     "photography": "Photography",
-    "photographyAlt": "Photography Icon",
+    "photographyAlt": "Photography icon",
     "contact": "Contact",
-    "contactAlt": "Contact Icon"
+    "contactAlt": "Contact icon"
   },
   "langSwitcher": {
     "current": "EN",
     "pl": "Polski",
-    "en": "English"
+    "en": "English",
+    "plAlt": "Polish Flag",
+    "enAlt": "English Flag",
+    "currentSelectedLangAlt": "Selected language: English"
+  },
+  "ariaLabels": {
+    "toggleNavigation": "Toggle navigation"
   },
   "hero": {
-    "profileAlt": "Profile picture of Marcin Sachs",
+    "profileAlt": "Marcin Sachs' profile picture",
     "title": "Welcome to my portfolio!",
     "subtitle": "My name is Marcin Sachs and I am passionate about programming, photography, and AutoCAD design."
   },
@@ -69,8 +75,5 @@
   },
   "footer": {
     "copyright": "Marcin Sachs. All rights reserved."
-  },
-  "ariaLabels": {
-      "toggleNavigation": "Toggle navigation"
   }
 }

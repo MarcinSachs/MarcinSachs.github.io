@@ -12,12 +12,12 @@ header#home {
     object-fit: cover; /* Zapewnia, że obrazki ładnie wypełniają przestrzeń */
 }
 
-#fotography img {
+#photography img {
     border: 3px solid #dee2e6; /* Przykładowa ramka dla zdjęć */
     transition: transform 0.3s ease-in-out;
 }
 
-#fotography img:hover {
+#photography img:hover {
     transform: scale(1.05); /* Lekki efekt zoomu po najechaniu myszką */
 }
 /* Icon Navigation Styles */
@@ -86,4 +86,11 @@ header#home {
 /* Zapewnienie, że kliknięty stan ma wyższy priorytet */
 .icon-link.link-active .nav-icon {
     filter: grayscale(0%); /* Upewnij się, że ikona jest kolorowa, jeśli link jest kliknięty */
+}
+
+/* Language switcher flag styles */
+.lang-flag {
+    width: 20px; /* Dostosuj rozmiar flagi według potrzeb */
+    height: auto; /* Zachowaj proporcje */
+    /* vertical-align: middle; - niepotrzebne przy użyciu flexbox */
 }

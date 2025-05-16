@@ -71,6 +71,23 @@ async function loadAndApplyTranslations(lang) {
         }
         currentTranslations = await response.json();
         await applyTranslationsToPage(); // This will also call checkAndApplyScrollActiveStates
+        // Update current language flag and code in the navbar
+        const currentLangFlagEl = document.getElementById('currentLangFlag');
+        const currentLangCodeEl = document.getElementById('currentLangCode');
+
+        if (currentLangFlagEl) {
+            currentLangFlagEl.src = `assets/images/flags/${currentLang}.svg`;
+            // Alt text for the current flag should be descriptive and ideally translatable
+            const altText = getTranslation(`langSwitcher.currentSelectedLangAlt`);
+            if (altText) {
+                currentLangFlagEl.alt = altText;
+            } else {
+                currentLangFlagEl.alt = `${currentLang.toUpperCase()} flag`; // Fallback
+            }
+        }
+        if (currentLangCodeEl) {
+            currentLangCodeEl.textContent = currentLang.toUpperCase();
+        }
     } catch (error)
         {
         console.error('Error loading or applying translations:', error);
