@@ -22,39 +22,47 @@ header#home {
 }
 /* Icon Navigation Styles */
 .icon-nav-item {
-    margin-left: 5px; /* Reduced margin for more icons */
-    margin-right: 5px;
+    margin-left: 0; /* Icons will be closer together */
+    margin-right: 0;
 }
 
 .icon-link {
     display: flex;
     align-items: center;
-    padding: 0.5rem 0.5rem; /* Adjust padding */
+    padding: 0.5rem 0.2rem; /* Reduced horizontal padding for more compact icons */
     text-decoration: none;
     position: relative; /* For label positioning */
     min-height: 40px; /* Ensure consistent height */
+    overflow: hidden; /* Clip label during transition */
 }
 
 .icon-label {
     opacity: 0;
     transform: translateX(-20px); /* Start shifted left and hidden */
-    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
-    white-space: nowrap;
-    margin-right: 8px; /* Space between label and icon when visible */
+    white-space: nowrap; /* Keep label on one line */
     font-size: 0.9rem; /* Slightly smaller font for nav labels */
+    margin-left: 0; /* No margin when hidden */
+    max-width: 0; /* Take no space when hidden */
+    overflow: hidden; /* Clip text content when max-width is 0 */
+    transition: opacity 0.2s ease-out,
+                transform 0.2s ease-out,
+                max-width 0.3s ease-out, /* Slower expansion for text */
+                margin-left 0.3s ease-out;
 }
 
 .nav-icon {
     width: 24px; /* Icon size */
     height: 24px;
     filter: grayscale(100%);
-    transition: filter 0.2s ease-out, transform 0.2s ease-out;
+    transition: filter 0.2s ease-out, transform 0.3s ease-out; /* Adjusted transform duration */
     flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
 .icon-link:hover .icon-label {
     opacity: 1;
     transform: translateX(0);
+    max-width: 100px; /* Allow space for the text, adjust as needed */
+    margin-left: 2px; /* Space between shifted icon and label */
 }
 
 .icon-link:hover .nav-icon,
@@ -63,7 +71,9 @@ header#home {
     filter: grayscale(0%);
 }
 .icon-link:hover .nav-icon {
-    transform: translateX(10px); /* Move icon to the right on hover */
+    /* Adjust this value as needed to make enough space for the longest label */
+    /* Consider the max-width of icon-label and its margin-left */
+    transform: translateX(-3px); /* Move icon further to the left on hover */
 }
 
 /* Styl dla etykiety tekstowej menu (hover i aktywny) */
