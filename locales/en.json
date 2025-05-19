@@ -4,10 +4,8 @@
   "nav": {
     "home": "Home",
     "homeAlt": "Home icon",
-    "python": "Python",
-    "pythonAlt": "Python icon",
-    "csharp": "C#",
-    "csharpAlt": "C# icon",
+    "programming": "Programming",
+    "programmingAlt": "Programing icon",
     "autocad": "AutoCAD",
     "autocadAlt": "AutoCAD icon",
     "photography": "Photography",

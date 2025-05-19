@@ -4,10 +4,8 @@
   "nav": {
     "home": "Start",
     "homeAlt": "Ikona strony głównej",
-    "python": "Python",
-    "pythonAlt": "Ikona Python",
-    "csharp": "C#",
-    "csharpAlt": "Ikona C#",
+    "programming": "Programowanie",
+    "programmingAlt": "Ikona programowania",
     "autocad": "AutoCAD",
     "autocadAlt": "Ikona AutoCAD",
     "photography": "Fotografia",
