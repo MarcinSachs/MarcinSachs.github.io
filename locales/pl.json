@@ -29,6 +29,9 @@
     "title": "Witaj na moim portfolio!",
     "subtitle": "Nazywam się Marcin Sachs i pasjonuję się programowaniem, fotografią oraz projektowaniem w AutoCAD."
   },
+  "programmingSection": {
+    "title": "Programowanie"
+  },
   "pythonSection": {
     "title": "Projekty Python",
     "intro": "Tutaj zaprezentuję moje projekty zrealizowane w języku Python. Python jest moją główną specjalizacją.",
@@ -48,6 +51,10 @@
         "description": "Krótki opis projektu.",
         "button": "Zobacz więcej"
     }
+  },
+  "otherProgrammingSection": {
+    "title": "Pozostałe",
+    "intro": "Znane języki i technologie programowania:"
   },
   "autocadSection": {
     "title": "Projekty AutoCAD",

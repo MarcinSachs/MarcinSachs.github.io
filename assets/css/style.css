@@ -94,3 +94,7 @@ header#home {
     height: auto; /* Zachowaj proporcje */
     /* vertical-align: middle; - niepotrzebne przy użyciu flexbox */
 }
+.logos-icon {
+    width: 50px; /* Icon size */
+    height: 50px;
+}

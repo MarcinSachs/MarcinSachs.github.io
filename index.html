@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Title will be set by JavaScript -->
-        <title>Moje Portfolio - Marcin Sachs</title>
+        <title>Marcin Sachs</title>
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Font Awesome CSS -->
@@ -14,10 +14,10 @@
         <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Nawigacja -->
+    <!-- Nvigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#" data-i18n="navBrand">Marcin</a>
+            <a class="navbar-brand" href="#" data-i18n="navBrand">Marcin Sachs</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     data-i18n-aria-label="ariaLabels.toggleNavigation"
                     aria-label="Przełącz nawigację"> <!-- Fallback aria-label -->
@@ -76,10 +76,9 @@
         </div>
     </nav>
 
-    <!-- Sekcja Startowa (Hero) -->
+    <!-- Start Section (Hero) -->
     <header id="home" class="py-5 text-center">
         <div class="container">
-            <!-- Pamiętaj, aby dodać swoje zdjęcie do assets/images/profile.jpg -->
             <img src="assets/images/profile.jpg"
                  data-i18n-alt="hero.profileAlt"
                  alt="Zdjęcie profilowe" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
@@ -88,10 +87,18 @@
         </div>
     </header>
 
-    <!-- Sekcja Python -->
-    <section id="python" class="py-5 bg-light">
+    <!-- Programming Section  -->
+    <section id="programming" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4" data-i18n="pythonSection.title">Projekty Python</h2>
+            <h2 class="text-center mb-4" data-i18n="programmingSection.title">Programowanie</h2>
+            <p class="text-center" data-i18n="programmingSection.intro">Znane języki i technologie programowania:</p>
+            <div id="logos">
+                <img src="assets/images/logos/python.svg" class="logos-icon">
+            </div>  
+        <!-- Python Programming Section-->
+        <section id="python" class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4" data-i18n="pythonSection.title">Projekty Python</h3>
             <p class="text-center" data-i18n="pythonSection.intro">Tutaj zaprezentuję moje projekty zrealizowane w języku Python. Python jest moją główną specjalizacją.</p>
             <div class="row">
                 <!-- Przykład projektu Python -->
@@ -110,12 +117,12 @@
                 <!-- Dodaj więcej kart projektów Python tutaj -->
             </div>
         </div>
-    </section>
+        </section>
 
-    <!-- Sekcja C# -->
-    <section id="csharp" class="py-5">
+        <!-- C# Programming Section-->
+        <section id="csharp" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4" data-i18n="csharpSection.title">Projekty C#</h2>
+            <h3 class="text-center mb-4" data-i18n="csharpSection.title">Projekty C#</h3>
             <p class="text-center" data-i18n="csharpSection.intro">Moje doświadczenie i projekty w C#.</p>
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-4">
@@ -130,8 +137,33 @@
                         </div>
                     </div>
                 </div>
+        </div>
+        </section>
 
-    <!-- Sekcja AutoCAD -->
+        <!-- Other Programming Section-->
+        <section id="other" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4" data-i18n="otherProgrammingSection.title">Pozostałe</h3>
+                <p class="text-center" data-i18n="csharpSection.intro">Moje doświadczenie i projekty w C#.</p>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300x200.png?text=Projekt+C%23+1" class="card-img-top"
+                                 data-i18n-alt="csharpSection.project1.alt"
+                                 alt="Projekt C# 1">
+                            <div class="card-body">
+                                <h5 class="card-title" data-i18n="csharpSection.project1.title">Nazwa Projektu C# 1</h5>
+                                <p class="card-text" data-i18n="csharpSection.project1.description">Krótki opis projektu.</p>
+                                <a href="#" class="btn btn-primary" data-i18n="csharpSection.project1.button">Zobacz więcej</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </section>
+
+    </div>
+    </section>
+    <!-- AutoCAD Section-->
     <section id="autocad" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4" data-i18n="autocadSection.title">Projekty AutoCAD</h2>
@@ -153,7 +185,7 @@
         </div>
     </section>
 
-    <!-- Sekcja Fotografia -->
+    <!-- Photography Section -->
     <section id="photography" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4" data-i18n="photographySection.title">Moja Fotografia</h2>
@@ -166,8 +198,8 @@
         </div>
     </section>
 
-    <!-- Sekcja Kontakt -->
-    <section id="kontakt" class="py-5 bg-light">
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4" data-i18n="contactSection.title">Kontakt</h2>
             <p class="text-center" data-i18n="contactSection.intro">Skontaktuj się ze mną poprzez email lub media społecznościowe.</p>
@@ -183,7 +215,7 @@
             </div>
     </section>
 
-    <!-- Stopka -->
+    <!-- Footer -->
     <footer class="py-4 bg-dark text-white text-center">
         <div class="container">
             <p>&copy; <span id="currentYear"></span> <span data-i18n="footer.copyright">Marcin Sachs. Wszelkie prawa zastrzeżone.</span></p>
