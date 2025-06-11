@@ -101,3 +101,7 @@ header#home {
 .progress {
     height: 20px;
 }
+.project-icon {
+    height: 1.2em; 
+    width: auto;
+}
