@@ -98,3 +98,6 @@ header#home {
     width: 50px; /* Icon size */
     height: 50px;
 }
+.progress {
+    height: 20px;
+}

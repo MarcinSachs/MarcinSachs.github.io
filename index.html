@@ -91,10 +91,60 @@
     <section id="programming" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4" data-i18n="programmingSection.title">Programowanie</h2>
-            <p class="text-center" data-i18n="programmingSection.intro">Znane języki i technologie programowania:</p>
-            <div id="logos">
-                <img src="assets/images/logos/python.svg" class="logos-icon">
-            </div>  
+            <p class="text-center" data-i18n="programmingSection.intro">Znane języki i technologie programowania wraz z moim poziomem zaawansowania:</p>
+            
+            <div class="row text-center justify-content-center gy-4" id="skills-logos">
+                <!-- Python -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="assets/images/logos/python.svg" class="logos-icon mb-2" alt="Python" style="height: 60px; width: auto;">
+                    <h5>Python</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" data-i18n="skills.levels.beginner">Początkujący</div>
+                    </div>
+                </div>
+
+                <!-- C# -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="assets/images/logos/csharp.svg" class="logos-icon mb-2" alt="C#" style="height: 60px; width: auto;">
+                    <h5>C#</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-i18n="skills.levels.intermediate">Średnio zaawansowany</div>
+                    </div>
+                </div>
+                <!-- Java -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="assets/images/logos/java.svg" class="logos-icon mb-2" alt="CSS" style="height: 60px; width: auto;">
+                    <h5>Java</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" data-i18n="skills.levels.beginner">Początkujący</div>
+                    </div>
+                </div>
+                <!-- PHP -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="assets/images/logos/php.svg" class="logos-icon mb-2" alt="CSS" style="height: 60px; width: auto;">
+                    <h5>PHP</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" data-i18n="skills.levels.beginner">Początkujący</div>
+                    </div>
+                </div>
+                <!-- HTML -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="assets/images/logos/HTML5.svg" class="logos-icon mb-2" alt="HTML" style="height: 60px; width: auto;">
+                    <h5>HTML</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-i18n="skills.levels.intermediate">Średnio zaawansowany</div>
+                    </div>
+                </div>
+                <!-- CSS -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="assets/images/logos/css3.svg" class="logos-icon mb-2" alt="CSS" style="height: 60px; width: auto;">
+                    <h5>CSS</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" data-i18n="skills.levels.beginner">Początkujący</div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5"> <!-- Opcjonalny separator przed sekcjami projektów -->
         <!-- Python Programming Section-->
         <section id="python" class="py-5 bg-light">
         <div class="container">
@@ -144,17 +194,16 @@
         <section id="other" class="py-5">
             <div class="container">
                 <h2 class="text-center mb-4" data-i18n="otherProgrammingSection.title">Pozostałe</h3>
-                <p class="text-center" data-i18n="csharpSection.intro">Moje doświadczenie i projekty w C#.</p>
+                <p class="text-center" data-i18n="otherProgrammingSection.intro">Pozostałe projekty w których biorę lub bralem udział.</p>
                 <div class="row">
                     <div class="col-md-6 col-lg-4 mb-4">
                         <div class="card">
-                            <img src="https://via.placeholder.com/300x200.png?text=Projekt+C%23+1" class="card-img-top"
-                                 data-i18n-alt="csharpSection.project1.alt"
-                                 alt="Projekt C# 1">
+                            <img src="https://raw.githubusercontent.com/graphefruit/Beanconqueror/refs/heads/master/assets/icon-background.png" class="card-img-top"
+                                 alt="Beanconqueror">
                             <div class="card-body">
-                                <h5 class="card-title" data-i18n="csharpSection.project1.title">Nazwa Projektu C# 1</h5>
-                                <p class="card-text" data-i18n="csharpSection.project1.description">Krótki opis projektu.</p>
-                                <a href="#" class="btn btn-primary" data-i18n="csharpSection.project1.button">Zobacz więcej</a>
+                                <h5 class="card-title">Beanconqueror</h5>
+                                <p class="card-text" data-i18n="otherProgrammingSection.project1Description">Beanconqueror to aplikacja dla miłośników kawy. Moją rolą w tym projekcie jest tłumaczenie na język polski.</p>
+                                <a href="https://github.com/graphefruit/Beanconqueror" class="btn btn-primary" data-i18n="navShowMore">Zobacz więcej</a>
                             </div>
                         </div>
                     </div>

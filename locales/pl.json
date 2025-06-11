@@ -1,6 +1,7 @@
 {
   "pageTitle": "Moje Portfolio - Marcin Sachs",
   "navBrand": "Marcin",
+  "navShowMore": "Zobacz więcej",
   "nav": {
     "home": "Start",
     "homeAlt": "Ikona strony głównej",
@@ -30,7 +31,8 @@
     "subtitle": "Nazywam się Marcin Sachs i pasjonuję się programowaniem, fotografią oraz projektowaniem w AutoCAD."
   },
   "programmingSection": {
-    "title": "Programowanie"
+    "title": "Programowanie",
+    "intro": "Znane języki i technologie programowania wraz z moim poziomem zaawansowania:"
   },
   "pythonSection": {
     "title": "Projekty Python",
@@ -54,7 +56,8 @@
   },
   "otherProgrammingSection": {
     "title": "Pozostałe",
-    "intro": "Znane języki i technologie programowania:"
+    "intro": "Pozostałe projekty w których biorę lub bralem udział.",
+    "project1Description": "Beanconqueror to aplikacja dla miłośników kawy. Moją rolą w tym projekcie jest tłumaczenie na język polski."
   },
   "autocadSection": {
     "title": "Projekty AutoCAD",
@@ -80,5 +83,13 @@
   },
   "footer": {
     "copyright": "Marcin Sachs. Wszelkie prawa zastrzeżone."
+  },
+  "skills": {
+    "levels": {
+      "intermediate": "Średnio zaawansowany",
+      "beginnerLearning": "Początkujący (w trakcie nauki)",
+      "beginner": "Początkujący"
+    }
   }
+
 }
