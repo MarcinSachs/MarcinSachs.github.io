@@ -67,9 +67,9 @@
     "title": "Projekty AutoCAD",
     "intro": "Przykłady moich prac wykonanych w AutoCAD. Pamiętaj, aby dodać swoje prace do `assets/images/autocad/`",
     "project1": {
-        "alt": "Projekt AutoCAD 1",
-        "title": "Projekt AutoCAD 1",
-        "description": "Opis projektu wykonanego w AutoCAD."
+        "alt": "Model dekoracyjnej kratownicy",
+        "title": "Model dekoracyjnej kratownicy",
+        "description": "Model dekoracyjnej kratownicy. Model został wykonany w AutoCAD z obiektów typu '3D solid'."
     }
   },
   "photographySection": {

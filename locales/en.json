@@ -67,9 +67,9 @@
     "title": "AutoCAD Projects",
     "intro": "Examples of my work done in AutoCAD. Remember to add your work to `assets/images/autocad/`",
     "project1": {
-        "alt": "AutoCAD Project 1",
-        "title": "AutoCAD Project 1",
-        "description": "Description of the project made in AutoCAD."
+        "alt": "Decorative truss model",
+        "title": "Decorative truss model",
+        "description": "Model of decorative truss. Model was created in AutoCAD using objects of type '3D solid'."
     }
   },
   "photographySection": {
