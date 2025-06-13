@@ -48,11 +48,15 @@
     "title": "Projekty C#",
     "intro": "Moje doświadczenie i projekty w C#.",
     "project1": {
-        "alt": "Projekt C# 1",
-        "title": "Nazwa Projektu C# 1",
-        "description": "Krótki opis projektu.",
-        "button": "Zobacz więcej"
-    }
+        "alt": "Wtyczka AutoCAD do modelowania stali",
+        "title": "Wtyczka AutoCAD do modelowania stali",
+        "description": "Wtczka do programu AutoCAD pozwalajaca na modelowanie elementów stalowych za pomocą obiektów typu '3D solid'. Ponaddo umożliwia tworzenie zestawień, wstawianie łączników oraz wstępne przygotowanie wydruków."
+    },
+    "project2": {
+      "alt": "Narzędzia dla AutoCAD",
+      "title": "Narzędzia dla AutoCAD",
+      "description": "Szereg narzędzi do programu AutoCAD wspomagajacych projektowanie. Wtyczka została napisana dla przyspieszenia codziennej pracy nad projektami w konstrukcji szkieletowej drewnianej. Zawiera między innymi zoptymalizowany masowy wydruk do plików PDF (z konkretna nazwą), tworzenie arkuszy z predefiniowanymi ustawieniami oraz wiele innych automatyzacji."
+  }
   },
   "otherProgrammingSection": {
     "title": "Pozostałe",

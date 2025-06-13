@@ -48,11 +48,15 @@
     "title": "C# Projects",
     "intro": "My experience and projects in C#.",
     "project1": {
-        "alt": "C# Project 1",
-        "title": "C# Project Name 1",
-        "description": "Short project description.",
-        "button": "See more"
-    }
+        "alt": "Steel modeling AutoCAD plugin",
+        "title": "Steel modeling AutoCAD plugin",
+        "description": "AutoCAD plug-in for modelling of steel components with “3D solid” objects. Overdo enables the creation of lists, the insertion of fasteners and the pre-preparation of prints."
+    },
+    "project2": {
+      "alt": "Useful  tools for AutoCAD",
+      "title": "Useful  tools for AutoCAD",
+      "description": "A range of AutoCAD tools to aid design. The plug-in has been written to speed up daily work on timber-frame projects. Among other things, it includes optimised mass printing to PDF files (with a specific name), creation of sheets with predefined settings and many other automations."
+  }
   },
   "otherProgrammingSection": {
     "title": "Other",
